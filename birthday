@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int a,b,c,n;
+    scanf("%d %d",&a,&b);
+    scanf(" %d",&c);
+    n = (a+b)%c;
+    if(n != 0){
+        printf("Invalid");
+    }
+    else{
+        printf("%d",(a+b)/c);
+    }
+}
