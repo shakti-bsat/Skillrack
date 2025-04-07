@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int num,small=10,n;
+    scanf("%d",&n);
+    while(n>0){
+        num = n%10;
+        if(num<small){
+            small = num;
+        }
+        n = n/10;
+    }
+    printf("%d",small);
+}
