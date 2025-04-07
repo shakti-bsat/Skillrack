@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int num,large,no; 
+    scanf("%d",&num);
+    large = 0;
+    while(num>0){
+        no = num%10;
+        if(no>large){
+            large = no;
+        }
+        num = num/10;
+    }
+    printf("%d",large);
+}
